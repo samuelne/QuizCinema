@@ -17,10 +17,11 @@ namespace QuizCinema
             InitializeComponent();
         }
 
-        private void btnPerg4_Click(object sender, EventArgs e)
+        private void btnResult_Click(object sender, EventArgs e)
         {
             MenuFinal final = new MenuFinal();
             final.Show();
+            this.Close();
         }
     }
 }

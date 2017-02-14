@@ -21,6 +21,7 @@ namespace QuizCinema
         {
             Pergunta3 perg3 = new Pergunta3();
             perg3.Show();
+            this.Close();
         }
     }
 }

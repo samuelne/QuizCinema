@@ -33,7 +33,7 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnPerg4 = new System.Windows.Forms.Button();
+            this.btnResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // radioButton4
@@ -94,23 +94,23 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
-            // btnPerg4
+            // btnResult
             // 
-            this.btnPerg4.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPerg4.Location = new System.Drawing.Point(392, 324);
-            this.btnPerg4.Name = "btnPerg4";
-            this.btnPerg4.Size = new System.Drawing.Size(140, 40);
-            this.btnPerg4.TabIndex = 10;
-            this.btnPerg4.Text = "Proxima Pergunta";
-            this.btnPerg4.UseVisualStyleBackColor = true;
-            this.btnPerg4.Click += new System.EventHandler(this.btnPerg4_Click);
+            this.btnResult.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResult.Location = new System.Drawing.Point(392, 324);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(140, 40);
+            this.btnResult.TabIndex = 10;
+            this.btnResult.Text = "Resultado";
+            this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
             // Pergunta4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 395);
-            this.Controls.Add(this.btnPerg4);
+            this.Controls.Add(this.btnResult);
             this.Controls.Add(this.radioButton4);
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
@@ -132,6 +132,6 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnPerg4;
+        private System.Windows.Forms.Button btnResult;
     }
 }

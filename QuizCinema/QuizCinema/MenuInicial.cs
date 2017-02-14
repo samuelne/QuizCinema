@@ -22,6 +22,7 @@ namespace QuizCinema
             
             TelaBoasVindas boasVindas = new TelaBoasVindas();
             boasVindas.Show();
+            this.Hide();
         }
     }
 }
