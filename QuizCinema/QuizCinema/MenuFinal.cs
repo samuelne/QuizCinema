@@ -12,7 +12,8 @@ namespace QuizCinema
 {
     public partial class MenuFinal : Form
     {
-        public MenuFinal()
+        public int id_jogador_banco;
+        public MenuFinal(int id_jogador)
         {
             InitializeComponent();
         }

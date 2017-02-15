@@ -36,6 +36,8 @@
             this.rbnAlternativa1 = new System.Windows.Forms.RadioButton();
             this.lblPergunta4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblPergunta = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +45,7 @@
             // 
             this.btnResultado.BackColor = System.Drawing.Color.Transparent;
             this.btnResultado.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResultado.Location = new System.Drawing.Point(339, 323);
+            this.btnResultado.Location = new System.Drawing.Point(339, 331);
             this.btnResultado.Name = "btnResultado";
             this.btnResultado.Size = new System.Drawing.Size(182, 40);
             this.btnResultado.TabIndex = 26;
@@ -56,7 +58,7 @@
             this.rbnAlternativa4.AutoSize = true;
             this.rbnAlternativa4.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa4.Location = new System.Drawing.Point(74, 261);
+            this.rbnAlternativa4.Location = new System.Drawing.Point(80, 294);
             this.rbnAlternativa4.Name = "rbnAlternativa4";
             this.rbnAlternativa4.Size = new System.Drawing.Size(284, 27);
             this.rbnAlternativa4.TabIndex = 25;
@@ -69,7 +71,7 @@
             this.rbnAlternativa3.AutoSize = true;
             this.rbnAlternativa3.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa3.Location = new System.Drawing.Point(74, 211);
+            this.rbnAlternativa3.Location = new System.Drawing.Point(80, 244);
             this.rbnAlternativa3.Name = "rbnAlternativa3";
             this.rbnAlternativa3.Size = new System.Drawing.Size(460, 27);
             this.rbnAlternativa3.TabIndex = 24;
@@ -82,7 +84,7 @@
             this.rbnAlternativa2.AutoSize = true;
             this.rbnAlternativa2.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa2.Location = new System.Drawing.Point(74, 158);
+            this.rbnAlternativa2.Location = new System.Drawing.Point(80, 191);
             this.rbnAlternativa2.Name = "rbnAlternativa2";
             this.rbnAlternativa2.Size = new System.Drawing.Size(240, 27);
             this.rbnAlternativa2.TabIndex = 23;
@@ -95,7 +97,7 @@
             this.rbnAlternativa1.AutoSize = true;
             this.rbnAlternativa1.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa1.Location = new System.Drawing.Point(74, 106);
+            this.rbnAlternativa1.Location = new System.Drawing.Point(80, 139);
             this.rbnAlternativa1.Name = "rbnAlternativa1";
             this.rbnAlternativa1.Size = new System.Drawing.Size(332, 27);
             this.rbnAlternativa1.TabIndex = 22;
@@ -108,11 +110,11 @@
             this.lblPergunta4.AutoSize = true;
             this.lblPergunta4.BackColor = System.Drawing.Color.Transparent;
             this.lblPergunta4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPergunta4.Location = new System.Drawing.Point(38, 37);
+            this.lblPergunta4.Location = new System.Drawing.Point(45, 96);
             this.lblPergunta4.Name = "lblPergunta4";
-            this.lblPergunta4.Size = new System.Drawing.Size(226, 23);
+            this.lblPergunta4.Size = new System.Drawing.Size(205, 23);
             this.lblPergunta4.TabIndex = 21;
-            this.lblPergunta4.Text = "4) Como Jack conheceu Rose?";
+            this.lblPergunta4.Text = "Como Jack conheceu Rose?";
             // 
             // pictureBox1
             // 
@@ -125,11 +127,33 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblNome.Location = new System.Drawing.Point(45, 9);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(53, 23);
+            this.lblNome.TabIndex = 29;
+            this.lblNome.Text = "label1";
+            // 
+            // lblPergunta
+            // 
+            this.lblPergunta.AutoSize = true;
+            this.lblPergunta.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblPergunta.Location = new System.Drawing.Point(45, 54);
+            this.lblPergunta.Name = "lblPergunta";
+            this.lblPergunta.Size = new System.Drawing.Size(88, 23);
+            this.lblPergunta.TabIndex = 28;
+            this.lblPergunta.Text = "Pergunta 3";
+            // 
             // Pergunta4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 395);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.lblPergunta);
             this.Controls.Add(this.btnResultado);
             this.Controls.Add(this.rbnAlternativa4);
             this.Controls.Add(this.rbnAlternativa3);
@@ -156,5 +180,7 @@
         private System.Windows.Forms.RadioButton rbnAlternativa1;
         private System.Windows.Forms.Label lblPergunta4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblPergunta;
+        public System.Windows.Forms.Label lblNome;
     }
 }

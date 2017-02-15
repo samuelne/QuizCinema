@@ -35,6 +35,8 @@
             this.rbnAlternativa4 = new System.Windows.Forms.RadioButton();
             this.btnPerg1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPergunta = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,18 +45,18 @@
             this.lblPergunta1.AutoSize = true;
             this.lblPergunta1.BackColor = System.Drawing.Color.Transparent;
             this.lblPergunta1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPergunta1.Location = new System.Drawing.Point(38, 37);
+            this.lblPergunta1.Location = new System.Drawing.Point(32, 127);
             this.lblPergunta1.Name = "lblPergunta1";
-            this.lblPergunta1.Size = new System.Drawing.Size(394, 23);
+            this.lblPergunta1.Size = new System.Drawing.Size(376, 23);
             this.lblPergunta1.TabIndex = 0;
-            this.lblPergunta1.Text = "1) Qual é a vassoura mais cara da saga harry potter?";
+            this.lblPergunta1.Text = "Qual é a vassoura mais cara da saga harry potter?";
             // 
             // rbnAlternativa1
             // 
             this.rbnAlternativa1.AutoSize = true;
             this.rbnAlternativa1.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa1.Location = new System.Drawing.Point(74, 106);
+            this.rbnAlternativa1.Location = new System.Drawing.Point(68, 181);
             this.rbnAlternativa1.Name = "rbnAlternativa1";
             this.rbnAlternativa1.Size = new System.Drawing.Size(124, 27);
             this.rbnAlternativa1.TabIndex = 1;
@@ -67,7 +69,7 @@
             this.rbnAlternativa2.AutoSize = true;
             this.rbnAlternativa2.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa2.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa2.Location = new System.Drawing.Point(74, 159);
+            this.rbnAlternativa2.Location = new System.Drawing.Point(68, 234);
             this.rbnAlternativa2.Name = "rbnAlternativa2";
             this.rbnAlternativa2.Size = new System.Drawing.Size(127, 27);
             this.rbnAlternativa2.TabIndex = 2;
@@ -80,7 +82,7 @@
             this.rbnAlternativa3.AutoSize = true;
             this.rbnAlternativa3.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa3.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa3.Location = new System.Drawing.Point(74, 208);
+            this.rbnAlternativa3.Location = new System.Drawing.Point(68, 283);
             this.rbnAlternativa3.Name = "rbnAlternativa3";
             this.rbnAlternativa3.Size = new System.Drawing.Size(124, 27);
             this.rbnAlternativa3.TabIndex = 3;
@@ -93,7 +95,7 @@
             this.rbnAlternativa4.AutoSize = true;
             this.rbnAlternativa4.BackColor = System.Drawing.Color.Transparent;
             this.rbnAlternativa4.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbnAlternativa4.Location = new System.Drawing.Point(74, 254);
+            this.rbnAlternativa4.Location = new System.Drawing.Point(68, 329);
             this.rbnAlternativa4.Name = "rbnAlternativa4";
             this.rbnAlternativa4.Size = new System.Drawing.Size(127, 27);
             this.rbnAlternativa4.TabIndex = 4;
@@ -124,11 +126,33 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // lblPergunta
+            // 
+            this.lblPergunta.AutoSize = true;
+            this.lblPergunta.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblPergunta.Location = new System.Drawing.Point(32, 68);
+            this.lblPergunta.Name = "lblPergunta";
+            this.lblPergunta.Size = new System.Drawing.Size(85, 23);
+            this.lblPergunta.TabIndex = 7;
+            this.lblPergunta.Text = "Pergunta 1";
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.lblNome.Location = new System.Drawing.Point(32, 19);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(53, 23);
+            this.lblNome.TabIndex = 8;
+            this.lblNome.Text = "label1";
+            // 
             // Pergunta1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(546, 395);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.lblPergunta);
             this.Controls.Add(this.btnPerg1);
             this.Controls.Add(this.rbnAlternativa4);
             this.Controls.Add(this.rbnAlternativa3);
@@ -155,5 +179,7 @@
         private System.Windows.Forms.RadioButton rbnAlternativa4;
         private System.Windows.Forms.Button btnPerg1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblPergunta;
+        public System.Windows.Forms.Label lblNome;
     }
 }
