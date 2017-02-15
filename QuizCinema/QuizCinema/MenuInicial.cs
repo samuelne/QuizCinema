@@ -97,8 +97,6 @@ namespace QuizCinema
                         //Mensagem Salvo no banco
                         //MessageBox.Show("Salvo no banco");
                                            
-                        //FECHA A CONEXAO
-                        conexao.Close();
 
 
                     if (id_jogador > 0)
@@ -121,7 +119,12 @@ namespace QuizCinema
                         p4.ShowDialog();
 
                         //MenuFinal final = new MenuFinal (id_jogador);
+                        string pontos = "";
+                        final.lblPontos.Text = final.lblPontos.Text + pontos;
                         final.ShowDialog();
+
+                        
+                        
 
                         }
 
