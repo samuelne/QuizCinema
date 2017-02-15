@@ -28,32 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaBoasVindas));
+            this.txtApresentacao = new System.Windows.Forms.TextBox();
             this.btnJogar = new System.Windows.Forms.Button();
             this.lblBemVindo = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtApresentacao
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(143, 144);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(257, 66);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "O jogo será bem divertido, espero que sejá capaz de responder e acertar todas as " +
-    "perguntas desse nosso quiz sobre cinema.";
+            this.txtApresentacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(178)))), ((int)(((byte)(219)))));
+            this.txtApresentacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtApresentacao.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtApresentacao.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApresentacao.Location = new System.Drawing.Point(73, 108);
+            this.txtApresentacao.Multiline = true;
+            this.txtApresentacao.Name = "txtApresentacao";
+            this.txtApresentacao.ReadOnly = true;
+            this.txtApresentacao.Size = new System.Drawing.Size(397, 130);
+            this.txtApresentacao.TabIndex = 0;
+            this.txtApresentacao.TabStop = false;
+            this.txtApresentacao.Text = "   Esse jogo é bem divertido, espero que sejá capaz de responder e acertar todas " +
+    "as perguntas desse nosso quiz sobre cinema.";
             // 
             // btnJogar
             // 
-            this.btnJogar.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJogar.Location = new System.Drawing.Point(217, 291);
+            this.btnJogar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJogar.Location = new System.Drawing.Point(200, 292);
             this.btnJogar.Name = "btnJogar";
-            this.btnJogar.Size = new System.Drawing.Size(112, 38);
+            this.btnJogar.Size = new System.Drawing.Size(151, 38);
             this.btnJogar.TabIndex = 1;
             this.btnJogar.Text = "Ok, Vamos lá";
             this.btnJogar.UseVisualStyleBackColor = true;
@@ -62,12 +66,25 @@
             // lblBemVindo
             // 
             this.lblBemVindo.AutoSize = true;
-            this.lblBemVindo.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBemVindo.Location = new System.Drawing.Point(213, 36);
+            this.lblBemVindo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(122)))));
+            this.lblBemVindo.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo.Location = new System.Drawing.Point(212, 27);
             this.lblBemVindo.Name = "lblBemVindo";
-            this.lblBemVindo.Size = new System.Drawing.Size(60, 15);
+            this.lblBemVindo.Size = new System.Drawing.Size(117, 30);
             this.lblBemVindo.TabIndex = 2;
             this.lblBemVindo.Text = "Bem Vindo";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(546, 395);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaBoasVindas
             // 
@@ -76,11 +93,13 @@
             this.ClientSize = new System.Drawing.Size(546, 395);
             this.Controls.Add(this.lblBemVindo);
             this.Controls.Add(this.btnJogar);
-            this.Controls.Add(this.textBox1);
-            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F);
+            this.Controls.Add(this.txtApresentacao);
+            this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TelaBoasVindas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BoasVindas";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,8 +107,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtApresentacao;
         private System.Windows.Forms.Button btnJogar;
-        private System.Windows.Forms.Label lblBemVindo;
+        public System.Windows.Forms.Label lblBemVindo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -15,6 +15,7 @@ namespace QuizCinema
         public TelaBoasVindas()
         {
             InitializeComponent();
+
         }
 
         private void btnJogar_Click(object sender, EventArgs e)
