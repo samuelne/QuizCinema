@@ -41,9 +41,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(137, 297);
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.button1.Location = new System.Drawing.Point(84, 297);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 34);
+            this.button1.Size = new System.Drawing.Size(176, 45);
             this.button1.TabIndex = 0;
             this.button1.Text = "Jogar Novamente";
             this.button1.UseVisualStyleBackColor = true;
@@ -51,9 +52,10 @@
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
             this.button2.Location = new System.Drawing.Point(316, 297);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 34);
+            this.button2.Size = new System.Drawing.Size(116, 45);
             this.button2.TabIndex = 1;
             this.button2.Text = "Encerrar";
             this.button2.UseVisualStyleBackColor = true;
@@ -62,18 +64,20 @@
             // lblNivel
             // 
             this.lblNivel.AutoSize = true;
+            this.lblNivel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNivel.Location = new System.Drawing.Point(137, 66);
             this.lblNivel.Name = "lblNivel";
-            this.lblNivel.Size = new System.Drawing.Size(53, 15);
+            this.lblNivel.Size = new System.Drawing.Size(75, 23);
             this.lblNivel.TabIndex = 2;
-            this.lblNivel.Text = "parabéns";
+            this.lblNivel.Text = "Parabéns";
             // 
             // lblPontos
             // 
             this.lblPontos.AutoSize = true;
-            this.lblPontos.Location = new System.Drawing.Point(178, 163);
+            this.lblPontos.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPontos.Location = new System.Drawing.Point(213, 131);
             this.lblPontos.Name = "lblPontos";
-            this.lblPontos.Size = new System.Drawing.Size(82, 15);
+            this.lblPontos.Size = new System.Drawing.Size(115, 23);
             this.lblPontos.TabIndex = 3;
             this.lblPontos.Text = "sua pontuação ";
             // 

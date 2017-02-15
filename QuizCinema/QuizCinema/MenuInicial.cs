@@ -63,6 +63,9 @@ namespace QuizCinema
                 Pergunta4 p4 = new Pergunta4(id_jogador);
                 p4.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
 
+                MenuFinal final = new MenuFinal(id_jogador);
+                final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text;
+
 
 
 
@@ -117,7 +120,7 @@ namespace QuizCinema
                         //Pergunta4 p4 = new Pergunta4(id_jogador);
                         p4.ShowDialog();
 
-                        MenuFinal final = new MenuFinal (id_jogador);
+                        //MenuFinal final = new MenuFinal (id_jogador);
                         final.ShowDialog();
 
                         }
@@ -136,5 +139,23 @@ namespace QuizCinema
                         
 
         }
+
+        private void txtNome_Enter(object sender, EventArgs e)
+        {
+            txtNome.Text = "";
+        }
+
+
+        private void txtSobrenome_Enter(object sender, EventArgs e)
+        {
+            txtSobrenome.Text = "";
+        }
+
+
+        private void txtEmail_Enter(object sender, EventArgs e)
+        {
+            txtEmail.Text = "";
+        }
+
     }
 }

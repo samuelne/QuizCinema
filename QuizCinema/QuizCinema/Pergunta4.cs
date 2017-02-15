@@ -32,7 +32,7 @@ namespace QuizCinema
                 pathServer += "Trusted_Connection=Yes;";
 
                 int pontos = 10;
-                string nivel = "dificil";
+                string nivel = "Facil";
 
                 string pathInsert = "INSERT INTO tb_perguntas ";
                 pathInsert += "(pergunta, resposta_correta, nivel, pontos , id_jogador)";
