@@ -46,13 +46,11 @@ namespace QuizCinema
                 boasVindas.lblBemVindo.Text = boasVindas.lblBemVindo.Text + " " + txtNome.Text;
 
 
-                string path = "Server = MEGAWARE\\SQLEXPRESS;";
-                    path +=   "Database=db_QuizCinema;";
-                    path +=   "Trusted_Connection=Yes;";
+                string pathServer = "Server = MEGAWARE\\SQLEXPRESS;";
+                    pathServer +=   "Database=db_QuizCinema;";
+                    pathServer +=   "Trusted_Connection=Yes;";
 
-                MessageBox.Show(path);
-
-                using (SqlConnection conexao = new SqlConnection(path))
+                using (SqlConnection conexao = new SqlConnection(pathServer))
                 {
                      SqlCommand cmd = new SqlCommand();
                     
@@ -73,8 +71,6 @@ namespace QuizCinema
 
                         insert += " ) ";
 
-                    MessageBox.Show(insert);
-
                         //ABRE A CONEXAO
                         conexao.Open();
 
@@ -82,9 +78,12 @@ namespace QuizCinema
                         cmd.CommandText = insert;
 
                         //EXECUTA O INSERT
+                        cmd.ExecuteNonQuery();
+
+                        //EXECUTA O INSERT
                         int id_jogador = 1;
-                        id_jogador = (int) cmd.ExecuteScalar();
-                                       
+                        //id_jogador = (int) cmd.ExecuteScalar();
+
                         //Mensagem Salvo no banco
                         MessageBox.Show("Salvo no banco");
                                            
