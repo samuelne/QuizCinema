@@ -23,11 +23,12 @@ namespace QuizCinema
             
             MenuFinal final = new MenuFinal();
 
-            using (SqlConnection conexao = new SqlConnection("Server = DESKTOP-V7V5L0R\\SQLEXPRESS;Database=db_QuizCinema;Trusted_Connection=Yes"))
+            string pathServer = "Server = AME0556341W10-1\\SQLEXPRESS;";
+            pathServer += "Database=db_QuizCinema;";
+            pathServer += "Trusted_Connection=Yes;";
+
+            using (SqlConnection conexao = new SqlConnection(pathServer))
             {
-
-
-
 
                 string sSQL = @"SELECT @@IDENTITY tb_jogador";
 

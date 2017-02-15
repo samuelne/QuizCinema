@@ -46,7 +46,7 @@ namespace QuizCinema
                 boasVindas.lblBemVindo.Text = boasVindas.lblBemVindo.Text + " " + txtNome.Text;
 
 
-                string pathServer = "Server = MEGAWARE\\SQLEXPRESS;";
+                string pathServer = "Server = AME0556341W10-1\\SQLEXPRESS;";
                     pathServer +=   "Database=db_QuizCinema;";
                     pathServer +=   "Trusted_Connection=Yes;";
 
