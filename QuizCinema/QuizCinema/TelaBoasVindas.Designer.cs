@@ -66,7 +66,7 @@
             // lblBemVindo
             // 
             this.lblBemVindo.AutoSize = true;
-            this.lblBemVindo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(64)))), ((int)(((byte)(122)))));
+            this.lblBemVindo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(178)))), ((int)(((byte)(219)))));
             this.lblBemVindo.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBemVindo.Location = new System.Drawing.Point(212, 27);
             this.lblBemVindo.Name = "lblBemVindo";
