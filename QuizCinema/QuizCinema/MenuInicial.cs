@@ -20,7 +20,6 @@ namespace QuizCinema
 
         }
 
-        int id_jogador;
 
         private void btnComecar_Click(object sender, EventArgs e)
         {
@@ -48,30 +47,9 @@ namespace QuizCinema
             else
             {
 
-                TelaBoasVindas boasVindas = new TelaBoasVindas();
-                boasVindas.lblBemVindo.Text = boasVindas.lblBemVindo.Text + " " + txtNome.Text + " " + txtSobrenome.Text;
+                               
 
-                Pergunta1 p1 = new Pergunta1(id_jogador);
-                p1.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
-
-                Pergunta2 p2 = new Pergunta2(id_jogador);
-                p2.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
-
-                Pergunta3 p3 = new Pergunta3(id_jogador);
-                p3.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
-
-                Pergunta4 p4 = new Pergunta4(id_jogador);
-                p4.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
-
-                MenuFinal final = new MenuFinal(id_jogador);
-                final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text;
-
-
-
-
-
-
-                string pathServer = "Server = AME0556341W10-1\\SQLEXPRESS;";
+                string pathServer = "Server = DESKTOP-V7V5L0R\\SQLEXPRESS;";
                     pathServer +=   "Database=db_QuizCinema;";
                     pathServer +=   "Trusted_Connection=Yes;";
 
@@ -94,13 +72,72 @@ namespace QuizCinema
                         int id_jogador;
                         id_jogador = (int)cmd.ExecuteScalar();
 
-                        //Mensagem Salvo no banco
-                        //MessageBox.Show("Salvo no banco");
-                                           
+
+                    //Mensagem Salvo no banco
+                    //MessageBox.Show("Salvo no banco");
+
 
 
                     if (id_jogador > 0)
                         {
+
+                        TelaBoasVindas boasVindas = new TelaBoasVindas();
+                        boasVindas.lblBemVindo.Text = boasVindas.lblBemVindo.Text + " " + txtNome.Text + " " + txtSobrenome.Text;
+
+                        Pergunta1 p1 = new Pergunta1(id_jogador);
+                        p1.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
+
+                        Pergunta2 p2 = new Pergunta2(id_jogador);
+                        p2.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
+
+                        Pergunta3 p3 = new Pergunta3(id_jogador);
+                        p3.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
+
+                        Pergunta4 p4 = new Pergunta4(id_jogador);
+                        p4.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
+
+
+                        string select = "SELECT SUM (pontos) FROM tb_perguntas WHERE id_jogador = 37";
+
+
+                        SqlCommand ler = new SqlCommand(select, conexao);
+                        
+
+                        int pontos;
+
+                        pontos = (int)ler.ExecuteScalar();
+
+                        MenuFinal final = new MenuFinal(id_jogador, pontos);                             
+
+
+                        final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text + ": " + pontos;
+
+                        if (pontos == 0)
+                        {
+                            final.lblSaudar.Text = "Precisa Estudar";
+                        }
+
+                        if (pontos == 10)
+                        {
+                            final.lblSaudar.Text = "Precisa Estudar";
+                        }
+
+                        if (pontos == 20)
+                        {
+                            final.lblSaudar.Text = "Foi Bem";
+                        }
+
+                        if (pontos == 30)
+                        {
+                            final.lblSaudar.Text = "Foi Bem";
+                        }
+
+                        if (pontos == 40)
+                        {
+                            final.lblSaudar.Text = "Parabéns";
+
+                        }
+
 
                         this.Hide();
 
@@ -117,15 +154,9 @@ namespace QuizCinema
 
                         //Pergunta4 p4 = new Pergunta4(id_jogador);
                         p4.ShowDialog();
-
-                        //MenuFinal final = new MenuFinal (id_jogador);
-                        string pontos = "";
-                        final.lblPontos.Text = final.lblPontos.Text + pontos;
-                        final.ShowDialog();
-
                         
-                        
-
+                        //MenuFinal final= new MenuFinal(id_jogador, pontos);
+                        final.ShowDialog();                                                              
                         }
 
                         else

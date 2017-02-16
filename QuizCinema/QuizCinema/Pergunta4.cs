@@ -27,7 +27,7 @@ namespace QuizCinema
             if (rbnAlternativa3.Checked == true)
             {
 
-                string pathServer = "Server = AME0556341W10-1\\SQLEXPRESS;";
+                string pathServer = "Server = DESKTOP-V7V5L0R\\SQLEXPRESS;";
                 pathServer += "Database=db_QuizCinema;";
                 pathServer += "Trusted_Connection=Yes;";
 
@@ -59,6 +59,8 @@ namespace QuizCinema
 
                         //EXECUTA O INSERT
                         cmd.ExecuteNonQuery();
+
+
 
                         //Mensagem Salvo no banco
                         //MessageBox.Show("Salvo no banco");

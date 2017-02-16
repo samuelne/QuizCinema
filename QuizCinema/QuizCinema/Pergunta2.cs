@@ -25,7 +25,7 @@ namespace QuizCinema
             if (rbnAlternativa4.Checked == true)
             {
 
-                string pathServer = "Server = AME0556341W10-1\\SQLEXPRESS;";
+                string pathServer = "Server = DESKTOP-V7V5L0R\\SQLEXPRESS;";
                 pathServer += "Database=db_QuizCinema;";
                 pathServer += "Trusted_Connection=Yes;";
 

@@ -29,47 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuFinal));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.lblNivel = new System.Windows.Forms.Label();
+            this.btnJogarNovamente = new System.Windows.Forms.Button();
+            this.lblSaudar = new System.Windows.Forms.Label();
             this.lblPontos = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnEncerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnJogarNovamente
             // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.button1.Location = new System.Drawing.Point(84, 297);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 45);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Jogar Novamente";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnJogarNovamente.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.btnJogarNovamente.Location = new System.Drawing.Point(84, 297);
+            this.btnJogarNovamente.Name = "btnJogarNovamente";
+            this.btnJogarNovamente.Size = new System.Drawing.Size(176, 45);
+            this.btnJogarNovamente.TabIndex = 0;
+            this.btnJogarNovamente.Text = "Jogar Novamente";
+            this.btnJogarNovamente.UseVisualStyleBackColor = true;
+            this.btnJogarNovamente.Click += new System.EventHandler(this.btnJogarNovamente_Click);
             // 
-            // button2
+            // lblSaudar
             // 
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.button2.Location = new System.Drawing.Point(316, 297);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Encerrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // lblNivel
-            // 
-            this.lblNivel.AutoSize = true;
-            this.lblNivel.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNivel.Location = new System.Drawing.Point(137, 66);
-            this.lblNivel.Name = "lblNivel";
-            this.lblNivel.Size = new System.Drawing.Size(75, 23);
-            this.lblNivel.TabIndex = 2;
-            this.lblNivel.Text = "Parabéns";
+            this.lblSaudar.AutoSize = true;
+            this.lblSaudar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaudar.Location = new System.Drawing.Point(137, 66);
+            this.lblSaudar.Name = "lblSaudar";
+            this.lblSaudar.Size = new System.Drawing.Size(75, 23);
+            this.lblSaudar.TabIndex = 2;
+            this.lblSaudar.Text = "Parabéns";
             // 
             // lblPontos
             // 
@@ -77,9 +66,9 @@
             this.lblPontos.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPontos.Location = new System.Drawing.Point(213, 131);
             this.lblPontos.Name = "lblPontos";
-            this.lblPontos.Size = new System.Drawing.Size(115, 23);
+            this.lblPontos.Size = new System.Drawing.Size(110, 23);
             this.lblPontos.TabIndex = 3;
-            this.lblPontos.Text = "sua pontuação ";
+            this.lblPontos.Text = "sua pontuação";
             // 
             // pictureBox1
             // 
@@ -104,6 +93,17 @@
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
+            // btnEncerrar
+            // 
+            this.btnEncerrar.Font = new System.Drawing.Font("Comic Sans MS", 12F);
+            this.btnEncerrar.Location = new System.Drawing.Point(316, 297);
+            this.btnEncerrar.Name = "btnEncerrar";
+            this.btnEncerrar.Size = new System.Drawing.Size(116, 45);
+            this.btnEncerrar.TabIndex = 1;
+            this.btnEncerrar.Text = "Encerrar";
+            this.btnEncerrar.UseVisualStyleBackColor = true;
+            this.btnEncerrar.Click += new System.EventHandler(this.btnEncerrar_Click);
+            // 
             // MenuFinal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -111,9 +111,9 @@
             this.ClientSize = new System.Drawing.Size(546, 395);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblPontos);
-            this.Controls.Add(this.lblNivel);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblSaudar);
+            this.Controls.Add(this.btnEncerrar);
+            this.Controls.Add(this.btnJogarNovamente);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "MenuFinal";
@@ -128,11 +128,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lblNivel;
+        private System.Windows.Forms.Button btnJogarNovamente;
         public System.Windows.Forms.Label lblPontos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnEncerrar;
+        public System.Windows.Forms.Label lblSaudar;
     }
 }
