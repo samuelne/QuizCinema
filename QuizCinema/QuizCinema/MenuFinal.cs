@@ -7,18 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace QuizCinema
 {
     public partial class MenuFinal : Form
     {
+        int pontos;
         public int id_jogador_banco;
         public int pontos_banco;
-        public MenuFinal(int id_jogador, int pontos)
+        public MenuFinal(int id_jogador)
+            
         {
             InitializeComponent();
-            int ponto_banco = pontos;
+
         }
+                       
 
 
         private void btnJogarNovamente_Click(object sender, EventArgs e)

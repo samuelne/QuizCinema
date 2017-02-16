@@ -22,7 +22,7 @@ namespace QuizCinema
 
         private void btnResult_Click(object sender, EventArgs e)
         {
-            
+
 
             if (rbnAlternativa3.Checked == true)
             {
@@ -61,26 +61,74 @@ namespace QuizCinema
                         cmd.ExecuteNonQuery();
 
 
-
                         //Mensagem Salvo no banco
                         //MessageBox.Show("Salvo no banco");
 
                         //FECHA A CONEXAO
                         conexao.Close();
 
-                        this.Close();
+
+
+                        string select = "SELECT SUM (pontos) FROM tb_perguntas WHERE id_jogador = ";
+
+                        SqlCommand read = new SqlCommand(select);
+                        
+
+                            SqlCommand ler = new SqlCommand(select, conexao);
+
+
+
+                            select += id_jogador_banco;
+
+                            MessageBox.Show(select);
+
+
+                            //pontos = (int)ler.ExecuteScalar();
+
+                            //MenuFinal final = new MenuFinal(id_jogador);
+
+                            ////final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text + ": " + pontos;
+
+                            //if (pontos == 0)
+                            //{
+                            //    final.lblSaudar.Text = "Precisa Estudar";
+                            //}
+
+                            //if (pontos == 10)
+                            //{
+                            //    final.lblSaudar.Text = "Precisa Estudar";
+                            //}
+
+                            //if (pontos == 20)
+                            //{
+                            //    final.lblSaudar.Text = "Foi Bem";
+                            //}
+
+                            //if (pontos == 30)
+                            //{
+                            //    final.lblSaudar.Text = "Foi Bem";
+                            //}
+
+                            //if (pontos == 40)
+                            //{
+                            //    final.lblSaudar.Text = "Parabéns";
+
+                            //}
+
+                            
+
+                        }
+
 
                     }
+                    //MenuFinal final = new MenuFinal();
+                    //final.lblPontos.Text = " " + final.lblPontos.Text;
 
+                    //  final.Show();
+                    this.Close();
                 }
 
-
-            }
-            //MenuFinal final = new MenuFinal();
-            //final.lblPontos.Text = " " + final.lblPontos.Text;
-            
-          //  final.Show();
             this.Close();
         }
+        }
     }
-}

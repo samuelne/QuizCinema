@@ -96,47 +96,7 @@ namespace QuizCinema
                         Pergunta4 p4 = new Pergunta4(id_jogador);
                         p4.lblNome.Text = txtNome.Text + " " + txtSobrenome.Text;
 
-
-                        string select = "SELECT SUM (pontos) FROM tb_perguntas WHERE id_jogador = 37";
-
-
-                        SqlCommand ler = new SqlCommand(select, conexao);
-                        
-
-                        int pontos;
-
-                        pontos = (int)ler.ExecuteScalar();
-
-                        MenuFinal final = new MenuFinal(id_jogador, pontos);                             
-
-
-                        final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text + ": " + pontos;
-
-                        if (pontos == 0)
-                        {
-                            final.lblSaudar.Text = "Precisa Estudar";
-                        }
-
-                        if (pontos == 10)
-                        {
-                            final.lblSaudar.Text = "Precisa Estudar";
-                        }
-
-                        if (pontos == 20)
-                        {
-                            final.lblSaudar.Text = "Foi Bem";
-                        }
-
-                        if (pontos == 30)
-                        {
-                            final.lblSaudar.Text = "Foi Bem";
-                        }
-
-                        if (pontos == 40)
-                        {
-                            final.lblSaudar.Text = "Parabéns";
-
-                        }
+                        MenuFinal final = new MenuFinal(id_jogador);
 
 
                         this.Hide();

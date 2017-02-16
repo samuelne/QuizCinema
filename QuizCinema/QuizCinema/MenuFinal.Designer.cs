@@ -56,9 +56,9 @@
             this.lblSaudar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaudar.Location = new System.Drawing.Point(137, 66);
             this.lblSaudar.Name = "lblSaudar";
-            this.lblSaudar.Size = new System.Drawing.Size(75, 23);
+            this.lblSaudar.Size = new System.Drawing.Size(78, 23);
             this.lblSaudar.TabIndex = 2;
-            this.lblSaudar.Text = "Parabéns";
+            this.lblSaudar.Text = "Saudação";
             // 
             // lblPontos
             // 
