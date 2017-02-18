@@ -13,17 +13,15 @@ namespace QuizCinema
 {
     public partial class MenuFinal : Form
     {
-        int pontos;
         public int id_jogador_banco;
         public int pontos_banco;
         public MenuFinal(int id_jogador)
-            
+
         {
             InitializeComponent();
 
         }
-                       
-
+                              
 
         private void btnJogarNovamente_Click(object sender, EventArgs e)
         {

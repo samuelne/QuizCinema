@@ -145,7 +145,7 @@
             this.lblPergunta.Name = "lblPergunta";
             this.lblPergunta.Size = new System.Drawing.Size(88, 23);
             this.lblPergunta.TabIndex = 28;
-            this.lblPergunta.Text = "Pergunta 3";
+            this.lblPergunta.Text = "Pergunta 4";
             // 
             // Pergunta4
             // 

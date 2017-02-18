@@ -13,12 +13,17 @@ namespace QuizCinema
 {
     public partial class Pergunta4 : Form
     {
+
+        int pontos = 10;
+        string nivel = "Facil";
+
         public int id_jogador_banco;
         public Pergunta4(int id_jogador)
         {
             InitializeComponent();
-            id_jogador_banco = id_jogador;
+            id_jogador_banco = id_jogador;            
         }
+        
 
         private void btnResult_Click(object sender, EventArgs e)
         {
@@ -26,29 +31,29 @@ namespace QuizCinema
 
             if (rbnAlternativa3.Checked == true)
             {
-
+                //PASSAGEM DE CAMINHO PARA CONEXAO COM O SERVIDOR
                 string pathServer = "Server = DESKTOP-V7V5L0R\\SQLEXPRESS;";
                 pathServer += "Database=db_QuizCinema;";
                 pathServer += "Trusted_Connection=Yes;";
 
-                int pontos = 10;
-                string nivel = "Facil";
 
+                //PASSAGEM DE CAMINHO PARA DAR COMANDO NO BANCO
                 string pathInsert = "INSERT INTO tb_perguntas ";
                 pathInsert += "(pergunta, resposta_correta, nivel, pontos , id_jogador)";
                 pathInsert += " VALUES ";
                 pathInsert += " ( ";
-
                 pathInsert += " '" + lblPergunta4.Text + "' ,";
                 pathInsert += " '" + rbnAlternativa3.Text + "' ,";
                 pathInsert += " '" + nivel + "' ,";
                 pathInsert += " '" + pontos + "' ,";
                 pathInsert += " '" + id_jogador_banco + "' ";
-
                 pathInsert += " ) ";
 
+
+                //CRIANDO A INSTANCIA DA CONEXAO COM O BANCO
                 using (SqlConnection conexao = new SqlConnection(pathServer))
                 {
+                    //CRIANDO A INSTANCIA DE COMANDO COM O BANCO
                     using (SqlCommand cmd = new SqlCommand(pathInsert, conexao))
                     {
                         //ABRE A CONEXAO
@@ -59,65 +64,32 @@ namespace QuizCinema
 
                         //EXECUTA O INSERT
                         cmd.ExecuteNonQuery();
+                       
+
+                        //string select = "SELECT SUM (pontos) FROM tb_perguntas WHERE id_jogador = ";
+
+                        //select += id_jogador_banco;
 
 
-                        //Mensagem Salvo no banco
-                        //MessageBox.Show("Salvo no banco");
+                        //SqlCommand ler = new SqlCommand(select, conexao);
+                        
+
+                        //    MessageBox.Show(select);
+
+
+                        //pontos = (int)ler.ExecuteScalar();
+
+                        
+                        //MenuFinal final = new MenuFinal(id_jogador);
+
+                        ////final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text + ": " + pontos;
+
+
 
                         //FECHA A CONEXAO
                         conexao.Close();
 
-
-
-                        string select = "SELECT SUM (pontos) FROM tb_perguntas WHERE id_jogador = ";
-
-                        SqlCommand read = new SqlCommand(select);
-                        
-
-                            SqlCommand ler = new SqlCommand(select, conexao);
-
-
-
-                            select += id_jogador_banco;
-
-                            MessageBox.Show(select);
-
-
-                            //pontos = (int)ler.ExecuteScalar();
-
-                            //MenuFinal final = new MenuFinal(id_jogador);
-
-                            ////final.lblPontos.Text = txtNome.Text + " " + txtSobrenome.Text + " " + final.lblPontos.Text + ": " + pontos;
-
-                            //if (pontos == 0)
-                            //{
-                            //    final.lblSaudar.Text = "Precisa Estudar";
-                            //}
-
-                            //if (pontos == 10)
-                            //{
-                            //    final.lblSaudar.Text = "Precisa Estudar";
-                            //}
-
-                            //if (pontos == 20)
-                            //{
-                            //    final.lblSaudar.Text = "Foi Bem";
-                            //}
-
-                            //if (pontos == 30)
-                            //{
-                            //    final.lblSaudar.Text = "Foi Bem";
-                            //}
-
-                            //if (pontos == 40)
-                            //{
-                            //    final.lblSaudar.Text = "Parabéns";
-
-                            //}
-
-                            
-
-                        }
+                    }
 
 
                     }
@@ -125,6 +97,8 @@ namespace QuizCinema
                     //final.lblPontos.Text = " " + final.lblPontos.Text;
 
                     //  final.Show();
+
+
                     this.Close();
                 }
 

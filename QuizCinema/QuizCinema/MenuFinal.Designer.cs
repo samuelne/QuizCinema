@@ -64,11 +64,12 @@
             // 
             this.lblPontos.AutoSize = true;
             this.lblPontos.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPontos.Location = new System.Drawing.Point(213, 131);
+            this.lblPontos.Location = new System.Drawing.Point(213, 130);
             this.lblPontos.Name = "lblPontos";
-            this.lblPontos.Size = new System.Drawing.Size(110, 23);
+            this.lblPontos.Size = new System.Drawing.Size(120, 23);
             this.lblPontos.TabIndex = 3;
-            this.lblPontos.Text = "sua pontuação";
+            this.lblPontos.Text = "sua pontuação: ";
+            this.lblPontos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pictureBox1
             // 

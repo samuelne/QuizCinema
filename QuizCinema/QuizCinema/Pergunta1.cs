@@ -59,9 +59,6 @@ namespace QuizCinema
                         //EXECUTA O INSERT
                         cmd.ExecuteNonQuery();
 
-                        //Mensagem Salvo no banco
-                        //MessageBox.Show("Salvo no banco");
-
                         //FECHA A CONEXAO
                         conexao.Close();
 
