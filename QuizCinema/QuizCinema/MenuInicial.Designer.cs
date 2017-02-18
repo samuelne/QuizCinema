@@ -95,6 +95,7 @@
             this.txtNome.TabIndex = 4;
             this.txtNome.Text = "Digite seu nome";
             this.txtNome.Enter += new System.EventHandler(this.txtNome_Enter);
+            this.txtNome.Leave += new System.EventHandler(this.txtNome_Leave);
             // 
             // txtSobrenome
             // 
@@ -105,6 +106,7 @@
             this.txtSobrenome.TabIndex = 5;
             this.txtSobrenome.Text = "Digite seu sobrenome";
             this.txtSobrenome.Enter += new System.EventHandler(this.txtSobrenome_Enter);
+            this.txtSobrenome.Leave += new System.EventHandler(this.txtSobrenome_Leave);
             // 
             // txtEmail
             // 
@@ -115,6 +117,7 @@
             this.txtEmail.TabIndex = 6;
             this.txtEmail.Text = "Digite seu email";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
+            this.txtEmail.Leave += new System.EventHandler(this.txtEmail_Leave);
             // 
             // pictureBox1
             // 

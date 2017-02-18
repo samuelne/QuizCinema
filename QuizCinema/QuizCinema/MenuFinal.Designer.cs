@@ -42,9 +42,9 @@
             // btnJogarNovamente
             // 
             this.btnJogarNovamente.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.btnJogarNovamente.Location = new System.Drawing.Point(84, 297);
+            this.btnJogarNovamente.Location = new System.Drawing.Point(100, 308);
             this.btnJogarNovamente.Name = "btnJogarNovamente";
-            this.btnJogarNovamente.Size = new System.Drawing.Size(176, 45);
+            this.btnJogarNovamente.Size = new System.Drawing.Size(156, 34);
             this.btnJogarNovamente.TabIndex = 0;
             this.btnJogarNovamente.Text = "Jogar Novamente";
             this.btnJogarNovamente.UseVisualStyleBackColor = true;
@@ -53,10 +53,10 @@
             // lblSaudar
             // 
             this.lblSaudar.AutoSize = true;
-            this.lblSaudar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSaudar.Location = new System.Drawing.Point(137, 66);
+            this.lblSaudar.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaudar.Location = new System.Drawing.Point(221, 23);
             this.lblSaudar.Name = "lblSaudar";
-            this.lblSaudar.Size = new System.Drawing.Size(78, 23);
+            this.lblSaudar.Size = new System.Drawing.Size(99, 27);
             this.lblSaudar.TabIndex = 2;
             this.lblSaudar.Text = "Saudação";
             // 
@@ -64,9 +64,9 @@
             // 
             this.lblPontos.AutoSize = true;
             this.lblPontos.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPontos.Location = new System.Drawing.Point(213, 130);
+            this.lblPontos.Location = new System.Drawing.Point(213, 120);
             this.lblPontos.Name = "lblPontos";
-            this.lblPontos.Size = new System.Drawing.Size(120, 23);
+            this.lblPontos.Size = new System.Drawing.Size(120, 33);
             this.lblPontos.TabIndex = 3;
             this.lblPontos.Text = "sua pontuação: ";
             this.lblPontos.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -97,9 +97,9 @@
             // btnEncerrar
             // 
             this.btnEncerrar.Font = new System.Drawing.Font("Comic Sans MS", 12F);
-            this.btnEncerrar.Location = new System.Drawing.Point(316, 297);
+            this.btnEncerrar.Location = new System.Drawing.Point(316, 308);
             this.btnEncerrar.Name = "btnEncerrar";
-            this.btnEncerrar.Size = new System.Drawing.Size(116, 45);
+            this.btnEncerrar.Size = new System.Drawing.Size(116, 34);
             this.btnEncerrar.TabIndex = 1;
             this.btnEncerrar.Text = "Encerrar";
             this.btnEncerrar.UseVisualStyleBackColor = true;

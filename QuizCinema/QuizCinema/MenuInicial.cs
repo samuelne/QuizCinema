@@ -191,9 +191,29 @@ namespace QuizCinema
         }
 
 
+        private void txtNome_Leave(object sender, EventArgs e)
+        {
+            if(txtNome.Text == "")
+            {
+                txtNome.Text = "Digite seu nome";
+            }
+            
+
+        }
+
+
         private void txtSobrenome_Enter(object sender, EventArgs e)
         {
             txtSobrenome.Text = "";
+        }
+
+
+        private void txtSobrenome_Leave(object sender, EventArgs e)
+        {
+            if (txtSobrenome.Text == "")
+            {
+                txtSobrenome.Text = "Digite seu sobrenome";
+            }
         }
 
 
@@ -202,5 +222,13 @@ namespace QuizCinema
             txtEmail.Text = "";
         }
 
+
+        private void txtEmail_Leave(object sender, EventArgs e)
+        {
+            if (txtEmail.Text == "")
+            {
+                txtEmail.Text = "Digite seu email";
+            }
+        }
     }
 }
